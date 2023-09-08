@@ -14,6 +14,5 @@ Hello all,<br>
   -When the user fills in the details and clicks on the register button, he/she will get an email for authentication. After authenticating, users will be able to login.<br>
   -After successful login, users can order items and give the date of the delivery and time by selecting a timeslot from the dropdown menu.<br>
   -After confirming their order they will get a notification that their order is placed and will get all the details of their order in the app.<br>
-  ![Screenshot (223)](https://github.com/keyuritrivedi/Order-Food-Application/assets/115882560/246d9009-9354-43b2-be19-1b4588906d95)
 
-
+  ![Screenshot (223)](https://github.com/keyuritrivedi/Order-Food-Application/assets/115882560/1d8c3b24-f30f-4b78-9211-3adb5705dce4)

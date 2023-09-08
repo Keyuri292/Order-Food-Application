@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name" translatable="false">Firebase connection</string>
+
+    <string-array name="time_slots_array">
+        <item>11.00-11.30 AM</item>
+        <item>11.30-12.00 AM</item>
+        <item>12.00-12.30 PM</item>
+        <item>3.00-3.30 PM</item>
+        <item>3.30-4.00 PM</item>
+        <item>4.00-4.30 PM</item>
+        <item>4.30-5.00 PM</item>
+        <item>5.00-5.30 pm</item>
+        <item>5.30-6.00 PM</item>
+        <item>6.00-6.30 PM</item>
+    </string-array>
+</resources>
+
+

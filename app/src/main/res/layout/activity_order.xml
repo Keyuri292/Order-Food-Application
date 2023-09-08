@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".OrderActivity">
+
+    <TextView
+        android:id="@+id/selectedItemText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu"
+        android:text="Menu"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:gravity="center"/>
+    <LinearLayout
+        android:id="@+id/sprouts_bhel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/menu"
+        android:layout_marginBottom="16dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/foodImage1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/sproutsbhel"
+            android:clickable="true"
+            android:scaleType="centerCrop"
+            android:contentDescription="Food Image 1"/>
+        <CheckBox
+            android:id="@+id/sproutsCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sprout bhel \n Rs.40"
+            android:textStyle="bold"
+            android:textSize="30sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/sproutsmix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/sprouts_bhel"
+        android:layout_marginBottom="16dp"
+        android:background="#ffffffff">
+        <ImageView
+            android:id="@+id/foodImage2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/sproutsmix"
+            android:clickable="true"
+
+            android:scaleType="centerCrop"
+            android:contentDescription="Food Image 2"/>
+        <CheckBox
+            android:id="@+id/sproutsmixCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sprout bhel(Jain) \nRs.40"
+            android:textStyle="bold"
+            android:textSize="30sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/fruitbowl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/sproutsmix"
+        android:layout_marginBottom="16dp"
+        android:background="#ffffffff">
+        <ImageView
+            android:id="@+id/foodImage3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/fruitsalad"
+            android:clickable="true"
+
+            android:scaleType="centerCrop"
+            android:contentDescription="Food Image 3"/>
+        <CheckBox
+            android:id="@+id/fruitsmallCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fruit Bowl \n Rs.60"
+            android:textStyle="bold"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/orderButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Place Order"/>
+</RelativeLayout>

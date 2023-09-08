@@ -16,7 +16,7 @@ public class WelcomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
 
-        getSupportActionBar().setTitle("Firebase App");
+        getSupportActionBar().setTitle("Order-Food-App");
         Button adminbutton = findViewById(R.id.admin);
 
         adminbutton.setOnClickListener(new View.OnClickListener() {

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">Firebase connection</string>
+    <string name="app_name" translatable="false">Order-Food-Application</string>
 
     <string-array name="time_slots_array">
         <item>11.00-11.30 AM</item>

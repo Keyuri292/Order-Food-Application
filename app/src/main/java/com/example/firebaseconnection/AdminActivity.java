@@ -17,7 +17,7 @@ import com.google.android.material.button.MaterialButton;
 
 public class AdminActivity extends AppCompatActivity {
 
-    private static final String ADMIN_PASSWORD = "admin"; // Change this to the actual admin password
+    private static final String ADMIN_PASSWORD = "______"; // Change this to the actual admin password
 
     private EditText passwordAdminEditText;
     private TextView userDetailsTextView; // Correct case here

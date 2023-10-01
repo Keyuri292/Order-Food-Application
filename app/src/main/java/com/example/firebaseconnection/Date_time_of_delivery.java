@@ -36,6 +36,7 @@ public class Date_time_of_delivery extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.date_time_delivery);
 
+        getSupportActionBar().hide();
         dateSlotEditText = findViewById(R.id.dateslot);
         timeSlotSpinner = findViewById(R.id.timeslot_spinner);
         confirmOrderButton = findViewById(R.id.confirmorder);
@@ -55,8 +56,8 @@ public class Date_time_of_delivery extends AppCompatActivity {
                 FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
                 if (currentUser != null) {
                     DatabaseReference userReference = FirebaseDatabase.getInstance().getReference("Registered Users").child(currentUser.getUid());
-                    userReference.child("date").setValue(selectedDate);
-                    userReference.child("time").setValue(selectedTime);
+                        userReference.child("date").setValue(selectedDate);
+                        userReference.child("time").setValue(selectedTime);
                 }
 
                 Intent confirmIntent = new Intent(Date_time_of_delivery.this, Notification.class);

@@ -7,12 +7,7 @@
     android:background="@drawable/background2"
     tools:context=".OrderActivity">
 
-    <TextView
-        android:id="@+id/selectedItemText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:textSize="16sp"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -21,15 +16,16 @@
         android:textColor="@color/black"
         android:textSize="30dp"
         android:textStyle="bold"
-        android:layout_margin="20dp"
+        android:layout_margin="40dp"
         android:gravity="center"/>
+
     <LinearLayout
         android:id="@+id/sprouts_bhel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_below="@id/menu"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="20dp"
         android:background="#ffffff">
 
         <ImageView
@@ -39,13 +35,13 @@
             android:src="@drawable/sproutsbhel"
             android:clickable="true"
             android:scaleType="centerCrop"
-            android:contentDescription="Food Image 1"/>
+            android:contentDescription="Food Image 1"
+            android:importantForAccessibility="yes"/>
         <CheckBox
             android:id="@+id/sproutsCheckbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sprout bhel \n Rs.40"
-            android:textStyle="bold"
             android:textSize="30sp"/>
     </LinearLayout>
     <LinearLayout
@@ -54,7 +50,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_below="@id/sprouts_bhel"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="20dp"
         android:background="#ffffffff">
         <ImageView
             android:id="@+id/foodImage2"
@@ -62,7 +58,7 @@
             android:layout_height="100dp"
             android:src="@drawable/sproutsmix"
             android:clickable="true"
-
+            android:importantForAccessibility="yes"
             android:scaleType="centerCrop"
             android:contentDescription="Food Image 2"/>
         <CheckBox
@@ -70,7 +66,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sprout bhel(Jain) \nRs.40"
-            android:textStyle="bold"
             android:textSize="30sp"/>
     </LinearLayout>
     <LinearLayout
@@ -79,7 +74,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_below="@id/sproutsmix"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="20dp"
         android:background="#ffffffff">
         <ImageView
             android:id="@+id/foodImage3"
@@ -87,7 +82,7 @@
             android:layout_height="100dp"
             android:src="@drawable/fruitsalad"
             android:clickable="true"
-
+            android:importantForAccessibility="yes"
             android:scaleType="centerCrop"
             android:contentDescription="Food Image 3"/>
         <CheckBox
@@ -95,14 +90,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Fruit Bowl \n Rs.60"
-            android:textStyle="bold"
             android:textSize="30sp"/>
     </LinearLayout>
-
+    <TextView
+        android:id="@+id/selectedItemText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fruitbowl"
+        android:text=""
+        android:textSize="16sp"
+        tools:ignore="NotSibling" />
     <Button
         android:id="@+id/orderButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/selectedItemText"
         android:text="Place Order"/>
 </RelativeLayout>

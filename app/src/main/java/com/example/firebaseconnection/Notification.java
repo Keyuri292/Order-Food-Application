@@ -25,6 +25,7 @@ public class Notification extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notify);
 
+        getSupportActionBar().hide();
         textView = findViewById(R.id.Success_message);
 
         FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();

@@ -35,8 +35,8 @@
         android:drawablePadding="15dp"
         android:hint="Date for Delivery"
         android:padding="15dp"
-        android:textColor="@color/white"
-        android:textColorHint="@color/black" />
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey" />
     <Spinner
         android:id="@+id/timeslot_spinner"
         android:layout_width="match_parent"
@@ -45,7 +45,9 @@
         android:layout_margin="20dp"
         android:padding="15dp"
         android:background="#30000000"
-        android:spinnerMode="dropdown"/>
+        android:spinnerMode="dropdown"
+        android:hint="Time for Delivery"
+        android:textColorHint="@color/grey"/>
 
     <Button
         android:id="@+id/confirmorder"
@@ -58,9 +60,7 @@
         android:layout_marginBottom="50dp"
         android:gravity="center"
         android:text="Confirm Order"
-        android:textColor="@color/black"
-        android:textSize="30dp"
-        android:textStyle="italic"
+        android:textColor="@color/white"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="24dp"
         tools:layout_editor_absoluteY="304dp" />

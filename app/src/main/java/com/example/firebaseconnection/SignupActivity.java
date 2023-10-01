@@ -31,7 +31,7 @@ public class SignupActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
-        getSupportActionBar().setTitle("Signup");
+        getSupportActionBar().hide();
         Toast.makeText(SignupActivity.this,"You can register now!", Toast.LENGTH_LONG).show();
 
         editTextusername = findViewById(R.id.username);

@@ -27,6 +27,7 @@ public class AdminDashboard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.admin_dashboard);
 
+        getSupportActionBar().hide();
         usersLayout = findViewById(R.id.usersLayout);
         registeredUsersRef = FirebaseDatabase.getInstance().getReference("Registered Users");
         handler = new Handler();

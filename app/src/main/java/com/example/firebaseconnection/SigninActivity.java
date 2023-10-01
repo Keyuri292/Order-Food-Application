@@ -36,7 +36,7 @@ public class SigninActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        getSupportActionBar().setTitle("Login");
+        getSupportActionBar().hide();
         editTextusername = findViewById(R.id.usernameLog);
         editTextpassword = findViewById(R.id.passwordLog);
         progressBar = findViewById(R.id.progressBar);

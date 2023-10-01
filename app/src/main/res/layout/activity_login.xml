@@ -37,14 +37,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/usernameLog"
-        android:layout_margin="20dp"
+        android:layout_margin="35dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="15dp"
         android:background="#30000000"
         android:drawablePadding="15dp"
         android:hint="Password"
         android:inputType="textPassword"
-        android:padding="20dp"
+        android:padding="15dp"
         android:textColor="@color/white"
         android:textColorHint="@color/black" />
 
@@ -68,7 +68,8 @@
         android:layout_below="@+id/loginbtn1"
         android:layout_centerHorizontal="true"
         android:text="Forgot Password"
-        android:onClick="forgotPasswordClick" />
+        android:onClick="forgotPasswordClick"
+        android:backgroundTint="@color/cardview_dark_background"/>
 
 
     <ProgressBar

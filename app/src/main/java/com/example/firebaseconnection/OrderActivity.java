@@ -34,6 +34,7 @@ public class OrderActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order);
 
+        getSupportActionBar().hide();
         itemPrices.put("Sprout bhel", 40.0);
         itemPrices.put("Sprout bhel (Jain)", 40.0);
         itemPrices.put("Fruit Bowl", 60.0);

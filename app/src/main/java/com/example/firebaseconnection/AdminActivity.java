@@ -17,7 +17,7 @@ import com.google.android.material.button.MaterialButton;
 
 public class AdminActivity extends AppCompatActivity {
 
-    private static final String ADMIN_PASSWORD = "______"; // Change this to the actual admin password
+    private static final String ADMIN_PASSWORD = "------"; // Change this to the actual admin password
 
     private EditText passwordAdminEditText;
     private TextView userDetailsTextView; // Correct case here
@@ -28,6 +28,7 @@ public class AdminActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin);
 
+        getSupportActionBar().hide();
         passwordAdminEditText = findViewById(R.id.passwordAdmin);
         userDetailsTextView = findViewById(R.id.userdetails); // Correct case here
 
@@ -38,12 +39,10 @@ public class AdminActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String enteredPassword = passwordAdminEditText.getText().toString().trim();
                 if (enteredPassword.equals(ADMIN_PASSWORD)) {
-                    // Password is correct, perform admin-related actions here
-                    // For example, navigate to the admin dashboard
+                    // Password is correct
                     Toast.makeText(AdminActivity.this, "Logged in as admin", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(AdminActivity.this, AdminDashboard.class);
                     startActivity(intent);
-                    // Add your navigation code here
                 } else {
                     Toast.makeText(AdminActivity.this, "Incorrect password", Toast.LENGTH_SHORT).show();
                 }
